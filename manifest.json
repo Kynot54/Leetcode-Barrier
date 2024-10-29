@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "You Shall Not Pass",
+    "version": 0.8,
+
+    "description": "Leetcode Question Barrier to Prevent Progress Until the Problem is Solved,",
+
+    "icons": {
+         "48": "YouShallNotPass-48.webp"
+         "96": "YouShallNotPass-96.webp"
+    }.
+
+    "content_scripts" : [
+        {
+            "matches": ["*://*mozilla.org/*"],
+            "js": ["leetcode.js"]
+        }
+    ]
+}
+
